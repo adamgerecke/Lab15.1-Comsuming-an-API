@@ -1,0 +1,13 @@
+﻿@model Card
+@{
+    ViewData["Title"] = "YourHand";
+}
+
+
+@foreach (CardDetail hand in Model.cards)
+{
+    <img src="@hand.image" />
+    @hand.value
+    @hand.suit
+
+}
